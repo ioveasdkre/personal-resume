@@ -6,7 +6,7 @@
   "editor.codeActionsOnSave": ["source.fixAll.eslint"],
   "eslint.validate": ["javascript", "typescript", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.ignoreWords": ["Nuxt", "nosniff"],
+  "cSpell.ignoreWords": ["Nuxt", "nosniff", "shadcn"],
   "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
   "todo-tree.general.tags": [
     "TODO",
