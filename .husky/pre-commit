@@ -3,7 +3,7 @@
 
 # 🔍 自動偵測執行環境
 if command -v bun &>/dev/null; then
-  RUNNER="bunx"
+  RUNNER="bun x"
 elif command -v pnpm &>/dev/null; then
   RUNNER="pnpm dlx"
 elif command -v yarn &>/dev/null; then
