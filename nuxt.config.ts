@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-security',
     'motion-v/nuxt',
+    'nuxt-swiper',
   ],
   typescript: {
     typeCheck: true,
