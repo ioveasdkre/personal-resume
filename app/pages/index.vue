@@ -1,5 +1,6 @@
 <template>
   <div class="bg-background text-foreground min-h-screen">
+    <Button />
     <div class="container mx-auto px-4 py-8">
       <h1 class="mb-8 text-3xl font-bold">Google Icons 深色/淺色模式展示</h1>
 
