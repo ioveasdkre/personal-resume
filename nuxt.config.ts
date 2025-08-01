@@ -3,16 +3,13 @@ import { i18nConfig, runtimeConfig, securityConfig } from './app/configs';
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-    '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
-    'nuxt-security',
-    'motion-v/nuxt',
-    'nuxt-swiper',
-  ],
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true,
+    },
+  },
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/i18n', 'nuxt-security', 'motion-v/nuxt'],
   typescript: {
     typeCheck: true,
   },
