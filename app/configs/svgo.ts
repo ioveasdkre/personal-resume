@@ -1,5 +1,5 @@
 const svgoConfig = {
-  autoImportPath: './assets/icons/svg/',
+  autoImportPath: '@/assets/icons/svg/',
 };
 
 export { svgoConfig };

@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { i18nConfig, runtimeConfig, securityConfig, svgoConfig } from './app/configs';
+import tailwindcss from '@tailwindcss/vite';
+import { i18nConfig, runtimeConfig, securityConfig, shadcnConfig, svgoConfig } from './app/configs';
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -16,18 +17,27 @@ export default defineNuxtConfig({
     'nuxt-security',
     'motion-v/nuxt',
     'nuxt-svgo',
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/icon',
   ],
+  colorMode: {
+    classSuffix: '',
+  },
   typescript: {
     typeCheck: true,
   },
   ssr: false,
+  runtimeConfig,
+  i18n: i18nConfig,
+  security: securityConfig,
+  shadcn: shadcnConfig,
+  svgo: svgoConfig,
+  css: ['@/assets/css/tailwind.css'],
   vite: {
+    plugins: [tailwindcss()],
     esbuild: {
       drop: runtimeConfig.public.isProduction ? ['console', 'debugger'] : [],
     },
   },
-  runtimeConfig,
-  i18n: i18nConfig,
-  security: securityConfig,
-  svgo: svgoConfig,
 });
