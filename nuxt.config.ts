@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { i18nConfig, runtimeConfig, securityConfig } from './app/configs';
+import { i18nConfig, runtimeConfig, securityConfig, svgoConfig } from './app/configs';
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -9,7 +9,14 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/i18n', 'nuxt-security', 'motion-v/nuxt'],
+  modules: [
+    '@nuxt/eslint',
+    '@pinia/nuxt',
+    '@nuxtjs/i18n',
+    'nuxt-security',
+    'motion-v/nuxt',
+    'nuxt-svgo',
+  ],
   typescript: {
     typeCheck: true,
   },
@@ -22,4 +29,5 @@ export default defineNuxtConfig({
   runtimeConfig,
   i18n: i18nConfig,
   security: securityConfig,
+  svgo: svgoConfig,
 });

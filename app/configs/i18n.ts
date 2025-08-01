@@ -11,4 +11,4 @@ const i18nConfig: Partial<NuxtI18nOptions> = {
   // strategy: 'prefix_except_default',
 };
 
-export default i18nConfig;
+export { i18nConfig };

@@ -7,4 +7,4 @@ const runtimeConfig = {
   },
 };
 
-export default runtimeConfig;
+export { runtimeConfig };

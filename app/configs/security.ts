@@ -76,4 +76,4 @@ const securityConfig: Partial<ModuleOptions> = {
   },
 };
 
-export default securityConfig;
+export { securityConfig };
