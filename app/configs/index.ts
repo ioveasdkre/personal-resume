@@ -1,3 +1,4 @@
+export * from './google-fonts';
 export * from './i18n';
 export * from './runtime';
 export * from './security';

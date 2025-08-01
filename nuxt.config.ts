@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite';
-import { i18nConfig, runtimeConfig, securityConfig, shadcnConfig, svgoConfig } from './app/configs';
+import {
+  googleFontsConfig,
+  i18nConfig,
+  runtimeConfig,
+  securityConfig,
+  shadcnConfig,
+  svgoConfig,
+} from './app/configs';
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -20,6 +27,7 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
+    '@nuxtjs/google-fonts',
   ],
   colorMode: {
     classSuffix: '',
@@ -29,6 +37,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   runtimeConfig,
+  googleFonts: googleFontsConfig,
   i18n: i18nConfig,
   security: securityConfig,
   shadcn: shadcnConfig,
